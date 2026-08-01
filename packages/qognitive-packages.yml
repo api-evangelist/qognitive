@@ -1,0 +1,42 @@
+generated: 2026-07-20
+method: searched
+source: PyPI (https://pypi.org/project/hone-io/, https://pypi.org/project/hone-io-enterprise/) + docs https://qognitive-qcog-core.readthedocs-hosted.com/en/latest/
+name: Qognitive Packages
+description: >-
+  First-party Python client libraries for Qognitive's Hone platform, an
+  analytical AI built on QCML (Quantum Cognition Machine Learning). The
+  libraries expose scikit-learn-compatible wrappers (QCMLRegressor,
+  QCMLClassifier) for regression and classification. Distributed as PyPI
+  packages; no REST API surface is published.
+packages:
+  - name: hone-io
+    registry: pypi
+    url: https://pypi.org/project/hone-io/
+    install: pip install hone-io
+    language: python
+    version: 2.3.0
+    official: true
+    edition: community
+    summary: Library for quantum cognition machine learning (Community Edition).
+    notes: >-
+      Community edition with capacity limits (max 100 input features, 12 output
+      features, Hilbert space dim 8, 1,000 training samples per batch). Contact
+      support@qognitive.io for commercial licensing.
+    docs: https://qognitive-qcog-core.readthedocs-hosted.com/en/latest/
+    maintainers:
+      - ctgallagher
+      - vahagn.k
+  - name: hone-io-enterprise
+    registry: pypi
+    url: https://pypi.org/project/hone-io-enterprise/
+    install: pip install hone-io-enterprise
+    language: python
+    version: 2.3.0
+    official: true
+    edition: enterprise
+    summary: Library for quantum cognition machine learning (Enterprise Edition).
+    notes: Enterprise edition with expanded capacity; requires a commercial license.
+    docs: https://qognitive-qcog-core.readthedocs-hosted.com/en/latest/
+    maintainers:
+      - ctgallagher
+      - vahagn.k

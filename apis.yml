@@ -1,8 +1,17 @@
 aid: qognitive
 name: Qognitive
-description: 'Qognitive is a company surfaced as a portfolio company of ribbit-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Qognitive, Inc. is an AI company that develops QCML (Quantum Cognition Machine
+  Learning), an analytical AI architecture positioned as an alternative to
+  classical statistical modeling. Its product, Hone, targets high-dimensional,
+  multi-modal, and noisy structured data — claiming near-linear scaling with
+  feature count and accuracy improvements over industry-standard models, with
+  peer-reviewed backing in Nature Scientific Reports and Risk.net. Hone is
+  distributed as first-party Python packages (hone-io community edition and
+  hone-io-enterprise) exposing scikit-learn-compatible regression and
+  classification wrappers. The company was surfaced as a Ribbit Capital
+  portfolio company. There is no public REST/HTTP API surface; integration is
+  via the Python SDK.
 url: https://raw.githubusercontent.com/api-evangelist/qognitive/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,15 +19,57 @@ x-backed-by:
 - ribbit-capital
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.qognitive.io/
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Ai
+- Machine Learning
+- Quantum
+- Data Science
+- Python SDK
+- Analytics
+- Financial Services
 apis: []
+common:
+- type: DomainSecurity
+  url: security/qognitive-domain-security.yml
+- type: Packages
+  url: packages/qognitive-packages.yml
+- type: SDKs
+  url: packages/qognitive-packages.yml
+- type: DeveloperPortal
+  url: https://www.qognitive.io/technology/
+- type: Documentation
+  url: https://qognitive-qcog-core.readthedocs-hosted.com/en/latest/
+- type: APIReference
+  url: https://qognitive-qcog-core.readthedocs-hosted.com/en/latest/api/qcml_sklearn_api.html
+- type: GettingStarted
+  url: https://qognitive-qcog-core.readthedocs-hosted.com/en/latest/
+- type: Blog
+  url: https://www.qognitive.io/blog/
+- type: Website
+  url: https://www.qognitive.io/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 2
+  pass: local-v1
